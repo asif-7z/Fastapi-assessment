@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assessment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send List Data</title>
+</head>
+<body>
+    <h1>Fastapi project</h1>
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input  id = "csv_file" type="file" name="file">
+        <label>Enter row No of name</label>
+        <input type="number" name="name_column">
+        <label>Enter row NO of age</label>
+        <input type="number" name="age_column">
+        <input type="submit" value="Upload">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{user[0]}}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[2] }}</td>
+                    <td>{{user[3]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+<script type="text/javascript">
+        // read csv headers from a csv uploaded
+    const csvFileInput = document.getElementById("csv_file");
+    const reader = new FileReader();
+    let csvHeaders = [];
+
+    // file upload input
+    // const csvFileInput = document.querySelector("csv-file");
+
+    csvFileInput.addEventListener("change", (e) => {
+      const fileList = e.target.files;
+      const file = fileList[0];
+      reader.readAsText(file);
+    });
+
+    reader.addEventListener("load", (e) => {
+        const result = e.target.result;
+        csvHeaders = result.split(/\r?\n/)[0].split(/,/);
+
+        console.log(csvHeaders);
+    });
+
+
+
+
+</script>
