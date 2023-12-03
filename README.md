@@ -2,7 +2,7 @@
 Overview
 This FastAPI application allows users to upload a CSV file containing user data and then displays the data on the frontend. The user can specify the columns for the name and age fields during the upload. The data is stored in a SQLite database, and the frontend is rendered using Jinja2 templates.
 
-Getting Started
+### Getting Started
 1.Clone the repository:
 ```
 git clone https://github.com/asif9048/Fastapi-assessment
