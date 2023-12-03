@@ -39,6 +39,6 @@ uvicorn main:app --reload
 ### Dependencies
 - FastAPI: FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+.
 - Jinja2: Jinja2 is a fast, expressive, succinct, extensible, and widely used template engine.
-> [!NOTE]
+### Note
 - Ensure that you have SQLite installed or make any necessary adjustments to the database connection details based on your requirements.
 - This application is a simple example and may require additional enhancements for production use, such as authentication, validation, and error handling.
