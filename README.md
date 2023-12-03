@@ -7,18 +7,19 @@ This FastAPI application allows users to upload a CSV file containing user data 
 ```
 git clone https://github.com/asif9048/Fastapi-assessment
 ```
+2. change Directory
 ```
 cd assessment
 ```
-2.Install dependencies:
+3. Install dependencies:
 ```
 pip install fastapi[all] jinja2
 ```
-3.Run the FastAPI application:
+4. Run the FastAPI application:
 ```
 uvicorn main:app --reload
 ```
-4.Open your browser and go to http://127.0.0.1:8000/ to access the application.
+5. Open your browser and go to http://127.0.0.1:8000/ to access the application.
 
 ## Usage:
 ### Uploading CSV File
