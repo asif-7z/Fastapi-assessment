@@ -5,8 +5,8 @@ This FastAPI application allows users to upload a CSV file containing user data 
 Getting Started
 1.Clone the repository:
 ```
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/asif9048/Fastapi-assessment
+cd Fastapi-assessment
 ```
 2.Install dependencies:
 ```
