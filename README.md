@@ -9,7 +9,7 @@ git clone https://github.com/asif9048/Fastapi-assessment
 ```
 2. change Directory
 ```
-cd assessment
+cd Fastapi-assessment/assessment/
 ```
 3. Install dependencies:
 ```
